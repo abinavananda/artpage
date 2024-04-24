@@ -1,0 +1,64 @@
+
+    <!---newww-->
+    {% extends "base.html" %}
+    {% load static %} 
+{% block content %}
+  <!-- Header Start -->
+  <div class="container-fluid hero-header bg-light py-5 mb-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 mb-3 animated slideInDown"> Portraits</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Our Services</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-6 animated fadeIn">
+                <div class="row g-3">
+                    <div class="col-6 text-end">
+                        <img class="img-fluid bg-white p-3 w-100" src="{% static 'img/pencil-portraits/pencil-portrait-3.jpg' %}" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid bg-white p-3 w-100" src="{% static 'img/pencil-portraits/pencil-portrait-c1.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+<!--card-->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow    "   style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">My Services</p>
+            <h1 class="display-6 mb-4"> Portraits</h1>
+        </div>
+        <div class="row g-3">
+            {% for x in art %} 
+            <div class="col-lg-3 col-md-6 wow    "   >
+                <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="{{ x.image.url}}" alt="">
+                        <div class="service-overlay">
+                            <!--<a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h4>{{ x.description}}</h4>
+                    </div>
+                </div>
+            </div>
+            {%  endfor %}
+        </div>
+    </div>
+</div>            
+<!-- end of card -->
+
+    {% endblock %}
