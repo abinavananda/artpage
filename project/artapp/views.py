@@ -17,5 +17,5 @@ def about_view(request):
     return render(request, 'about.html')  
 
 
-def service(request):
+def service_view(request):
     return render(request, 'service.html')  

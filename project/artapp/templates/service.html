@@ -1,0 +1,99 @@
+  <!---newww-->
+  {% extends "base.html" %}
+  {% load static %} 
+{% block content %}
+    <!-- Header Start -->
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">My Services</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">My Services</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white p-3 w-100" src="{% static "img/hero-1.jpg" %}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white p-3 w-100" src="{% static "img/hero-2.jpg" %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">My Services</p>
+                <h1 class="display-6 mb-4">I Provide The Best Professional Artwork In The State</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static "img/pencil-portraits/pencil-portrait-1.jpg" %}" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Pencil Portraits</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static "img/color-portrait/color-portrait-1.jpg" %}" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Colour Portraits</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static "img/caricature/single.jpg" %}" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Caricature</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item d-flex flex-column bg-light p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static "img/custom-works/fabric-painting.jpg" %}" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Custom Works</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    {% endblock %}
