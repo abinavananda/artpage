@@ -19,3 +19,6 @@ def about_view(request):
 
 def service_view(request):
     return render(request, 'service.html')  
+
+def contact_view(request):
+    return render(request, 'contact.html') 
